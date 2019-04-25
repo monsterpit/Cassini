@@ -1,0 +1,365 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fnil\fcharset0 LucidaGrande-Bold;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{check\}}{\leveltext\leveltemplateid1\'01\uc0\u10003 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{check\}}{\leveltext\leveltemplateid101\'01\uc0\u10003 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{check\}}{\leveltext\leveltemplateid201\'01\uc0\u10003 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\qc\partightenfactor0
+\ls1\ilvl0
+\f0\b\fs24 \cf0 {\listtext	
+\f1 \uc0\u10003 
+\f0 	}UIScrollView\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 \
+\
+It's a little area on screen and you want to look at something big so you got a scrollView you can scroll around with your finger and pinch in and out to zoom in on it out of it .\
+ScrollView is a very powerful UIView and works really like a UIView in pretty much all circumstances\
+\
+\
+Adding a normal view \
+
+\f0\b \
+
+\f2\b0 {{\NeXTGraphic Screenshot 2019-04-25 at 10.56.47 AM.png \width12020 \height7580 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}{{\NeXTGraphic Screenshot 2019-04-25 at 10.57.06 AM.png \width14600 \height8280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+\
+
+\f0\b ContentSize when we specify this contentSize we are specifying the size of the area that the scrollview is going to scroll around .
+\f2\b0 \
+So this is the big thing that the scrollView which is little is going to look around in and it's only a size it's origin is always zero zero\
+So this var contentSize that you see right there in scroll here is crucial it's the most important var may be on any class anywhere.\
+It's the thing that tells the scrollView how big the space is but after that adding subViews looks just like another view \
+Now I can create a frame add a subview to the scrollview and instead of putting it the black square over  there on the left it put it in that content area instead \
+Same frame but it puts it  you know it still uses the frame to place it but it's doing it in the content area \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.10.12 AM.png \width14600 \height8380 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 and i can put other things there in multiple subviews as many as i want So here's two of them \
+\
+\
+\
+Now the scrollView what it does it just let's you have a little window that is scrolling around as the user pans around here and of course they can zoom as well \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.10.55 AM.png \width14520 \height8260 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.11.01 AM.png \width10200 \height6760 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.11.05 AM.png \width13140 \height7840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.11.13 AM.png \width11320 \height8300 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.11.17 AM.png \width14820 \height6820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.11.23 AM.png \width14140 \height8020 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+Now you can reposition the subViews in that content area just like you can in a regular subview .\
+So I just new frames set that thing to have a new frame and repositioned set the logo have different frame entry positions .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.19.49 AM.png \width14760 \height8500 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.19.33 AM.png \width14640 \height8280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+Now I have all this white spaces on the edges as I don't want it anymore so I can just reset my content size to fit the aerial frame   \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.20.45 AM.png \width13880 \height7500 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+Now when i scroll around I am just looking in this new content area\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.22.18 AM.png \width11720 \height7720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 11.22.57 AM.png \width10660 \height7660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}{{\NeXTGraphic Screenshot 2019-04-25 at 11.23.02 AM.png \width11960 \height7960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}{{\NeXTGraphic Screenshot 2019-04-25 at 11.23.06 AM.png \width13100 \height6540 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}{{\NeXTGraphic Screenshot 2019-04-25 at 11.23.11 AM.png \width12740 \height7640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+The contentSize is the key \
+\
+Because of this magic  there's a couple of other things about scrollView like it has a var called contentOffset \
+\
+contentOffest is just the X & Y position of upper left corner what the scrollView is showing in that content areas coordinate system \
+It's just the offset of the content that is being shown there\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 12.17.54 PM.png \width14020 \height7460 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 12.18.12 PM.png \width14300 \height8300 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 and you also might be zoomed though \
+okay if you are zoomed though you are probably much more interested in what is the rectangle in the contentArea coordinate system that I am looking at because maybe \
+I am zoomed way in on one of the windows there in the quad and I want to know that window well that's gonna be a very small rectangle that window because I am zoomed way in on it \
+and the way we do that is using  the same methods \
+
+\f0\b convertFrom and convertTo points and rectangles
+\f2\b0  those all work in UIScrollView \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 If you say convert from the scrollView to this aerial view you will get the rect bounds of the scrollView in that view's coordinate system \
+so that's how you can find out that rect in the aerial view coordinate system .\
+It's just a normal convert \
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 12.30.43 PM.png \width14360 \height8240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+So how you create a scrollView???\
+(1)Well you can drag 1 out  of one from object palette .\
+(2)You can also select the view in your storyboard and go to embed menu the same place you say embed in navigation controller and say embed in scrollView and it will wrap the scrollView around.\
+Unfortunately it put a 20 points border around it , which i don't really like but it does.\
+So you can do it either way\
+(3) or you can obviously create them in code .\
+It's just an UIView , so it has init with frame initializer so you could do that as well \
+\
+\
+
+\f0\b So once you have created your scrollView or put in your storyboard and created an outlet to it.\
+then you just say addSubview to add your subViews to it .\
+But this will do nothing .
+\f2\b0 \
+
+\f0\b Nothing will appear on screen until you set your contentSize \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 If you don't set that contentSize then the scrollView will be scrolling over a little zero with zero height rectangle in the corner and if you put a subView in it .\
+it probably will spill over and show but there will be no scrolling .\
+So if you use a scrollView and your image appears or your view appears but then you can't pan or pinch , it's probably because your contentSize is zero .\
+The panning and pinching is only happening in the content area .\
+\
+\
+\
+\
+\
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\qc\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	
+\f3 \uc0\u10003 
+\f2 	}
+\f0\b Creating a ScrollView
+\f2\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+{{\NeXTGraphic Screenshot 2019-04-25 at 12.44.03 PM.png \width15120 \height7400 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 You can scroll programmatically of course the user can scroll with their finger  but you can do it in code by saying \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b scrollRectToVisible you just specify a rectangle in the content area and it will slide over to show that rectangle 
+\f2\b0 .\
+You can control a lot of other things that\
+e.g.
+\f0\b  when the scrollView first appears on screen it can flash it's scroll indicators
+\f2\b0  , the two things to show where you are scrolled on the edges they can flash that's the default in fact  , \
+but there's this var flashScrollingIndicators  you could to false if you don't us to do that etc.\
+Also scrollView is super smart about safe areas (safe areas like place at the top of the iPhone X or you are in the navigation Controller and the title or a tabbar at the bottom where it's like not safe to draw there)  well even if you make scrollView underneath those safe areas it will let you scroll your content into the safe areas but if you scroll all the way down or all the way over then it will make sure your content is not obscured by the safe area .\
+
+\f0\b So scrollView really super smart about safe areas 
+\f2\b0 \
+Because it is often the case that when we have a scrollView we might want to go fullscreen to get as much of our image on screen as we can but you know if we some pixels in the upper left corner  we don't want them to be underneath the little black bar at the iPhone X , so we want to be able to make sure we scroll down there to that far  \
+\
+  \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li720\fi-720\pardirnatural\qc\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	
+\f3 \uc0\u10003 
+\f2 	}
+\f0\b Zooming the ScrollView\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 12.46.53 PM.png \width14360 \height8280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+So far we have only talked about panning moving the scrollview around what if we want to zoom in on what we are looking at and it larger .\
+
+\f0\b Now one thing when you zoom in btw be careful that's obviously gonna affect your contentSize.
+\f2\b0 \
+If I zoom in to make what I am looking at bigger the content  area has to get bigger as well so sometimes that happens and then people are expecting  their content area to be same old size and it's not okay \
+Now scrollView automatically sizes it for you , so you don't have to worry about it but it's just if you ever look at your contentSize while you are zoomed in it's going to be larger or smaller if you zoom out .\
+And take me with the content offset obviously  \
+\
+\
+
+\f0\b So how do you make zooming work.... \
+
+\f2\b0 \
+You have to do 2 things (it will not work without these 2 things  )\
+(1)
+\f0\b  Is to set the zoom scale min and max
+\f2\b0 (So this say how much do you allow to zoom in and how much do you allow to zoom out )(by default this both are 1.0 which means you can't zoom  in or zoom out , it has to be identity size ).\
+Now zooming in scrollView works by modifying the transform (the thing you can rotate scale  or translate well it's using the scale part of a transform to scale one of it's subviews up and down ) (that's how scrollView works that's all it does btw )\
+(when you zoom in and out it's not doing anything else except for transforming the view that you specify so this tells it how much it can modify that transform so if it's 1.0 the transform is always the identity matrix and so it's never gonna zoom in or out so you have to set these atleast one of these 2 or you won't be able to zoom )\
+\
+(2) Is to specify that view that gets transformed because that the scrollView that contentArea is allowed to have multiple subViews like we have the logo , we have the aerial view .\
+So when I pinch which of those gets zoomed , So you have to actually implement a delegate method in scrollView .\
+
+\f0\b Yes that's right if you want to zoom on a scrollView you have to implement this delegate method and that delegate method is called viewForZooming(in scrollView) and it just returns which of the subViews to zoom .
+\f2\b0 \
+\
+\
+Now to be honest normally if we have multiple subViews we put them inside of a view a top-level view and that's the view we would zoom on and of course when we transform that the view with all the subviews  will get zoomed as well \
+we wouldn't  usually have 2 different views that are subViews in the content area of the scrollView and they are not subviews of some common view  .\
+But it's possible to do but we don't usually do that \
+\
+\
+
+\f0\b You can also zoom programmatically 
+\f2\b0 \
+in addition to pinching to zoom  , you can set the zoom scale and also zoom to a rack\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.23.39 PM.png \width10940 \height7500 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+So here what it looks like and here I am my zoom scale set to 1.2 that's 20% larger than the identity matrix ,\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.25.59 PM.png \width9560 \height7820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+ here I have gone back to identity matrix see how it zoomed out little\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.28.00 PM.png \width7020 \height7420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+Now I will go back to 1.2 see it's 20% larger even this wouldn't work if I don't set my minimum and maximum zoom scale to allow this. \
+\
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.30.53 PM.png \width10660 \height7840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 Now the rect is even cooler ,\
+{{\NeXTGraphic Screenshot 2019-04-25 at 1.31.25 PM.png \width7240 \height7420 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+So far if I had this yellow rectangle and I said zoom to rect  it will zoom the whole thing up so the rect just barely fits \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.31.44 PM.png \width8080 \height8060 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 Or if had a rect that was much bigger than it would zoom it down to fit .\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.32.45 PM.png \width7120 \height7780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 So 
+\f0\b zoom(to rect)
+\f2\b0  is a cool way to zoom in and out \
+\
+\
+\
+\
+\
+\
+So scrollView has lot of delegate methods like 12 or 15 somewhere in there\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Screenshot 2019-04-25 at 1.43.25 PM.png \width14580 \height6440 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+scrollViewDidEndZooming(scrollview,view,atScale) and this gets sent to you when the user pinches and lifts the fingers up ,\
+Now remember as they are pinching all this being changed is the transform of the view for zooming that's it nothing else is happening there \
+and when you let go what if your view if you are capable of drawing your view much higher resolution when it zoomed in \
+for e.g. Let's say your view draws an arc with core graphics (arc is just bunch of little pixels right coming around )\
+if you zoom way in it's gonna look like little block kind of jaggedy .\
+Well here when you get this scrollViewDidEndZooming(scrollview,view,atScale) you could set your transform back to the identity matrix and draw your drawRect bigger .\
+So you are using that arc and now you get a nice smooth arc .\
+So this is a good way to draw with high resolution after you pinch in , you are still going to be doing transform while it's pinching which is good high performance and all that but then when you let go it redraws kinda sharp .\
+}
