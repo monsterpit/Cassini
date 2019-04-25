@@ -20,17 +20,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-PJ-kNI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="896" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-by-qYy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="JGW-by-qYy" firstAttribute="bottom" secondItem="fYD-PJ-kNI" secondAttribute="bottom" id="IzN-f3-1ac"/>
-                                    <constraint firstItem="JGW-by-qYy" firstAttribute="leading" secondItem="fYD-PJ-kNI" secondAttribute="leading" id="NQc-Ji-q35"/>
-                                    <constraint firstItem="JGW-by-qYy" firstAttribute="top" secondItem="fYD-PJ-kNI" secondAttribute="top" id="mVQ-dl-3eR"/>
-                                    <constraint firstItem="JGW-by-qYy" firstAttribute="trailing" secondItem="fYD-PJ-kNI" secondAttribute="trailing" id="yOa-kp-nHm"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,7 +32,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="JGW-by-qYy" id="QSf-k2-0Rs"/>
+                        <outlet property="scrollView" destination="fYD-PJ-kNI" id="akT-gr-ked"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
