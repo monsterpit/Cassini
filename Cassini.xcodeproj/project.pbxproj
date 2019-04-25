@@ -13,6 +13,8 @@
 		2C454233227008CC0065D7E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C454231227008CC0065D7E5 /* LaunchScreen.storyboard */; };
 		9B9E66592271C2E20009E4C3 /* UIScrollView.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 9B9E66582271C2E20009E4C3 /* UIScrollView.rtfd */; };
 		9B9E665C2271C50E0009E4C3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E665B2271C50E0009E4C3 /* ImageViewController.swift */; };
+		9B9E665E2271E17B0009E4C3 /* DemoURLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E665D2271E17B0009E4C3 /* DemoURLs.swift */; };
+		9B9E66602271E3EB0009E4C3 /* oval.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B9E665F2271E3EA0009E4C3 /* oval.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2C454234227008CC0065D7E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B9E66582271C2E20009E4C3 /* UIScrollView.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = UIScrollView.rtfd; sourceTree = "<group>"; };
 		9B9E665B2271C50E0009E4C3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		9B9E665D2271E17B0009E4C3 /* DemoURLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoURLs.swift; sourceTree = "<group>"; };
+		9B9E665F2271E3EA0009E4C3 /* oval.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oval.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9B9E665B2271C50E0009E4C3 /* ImageViewController.swift */,
 				2C45422C227008C50065D7E5 /* Main.storyboard */,
 				9B9E66582271C2E20009E4C3 /* UIScrollView.rtfd */,
+				9B9E665D2271E17B0009E4C3 /* DemoURLs.swift */,
+				9B9E665F2271E3EA0009E4C3 /* oval.jpg */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -134,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C454233227008CC0065D7E5 /* LaunchScreen.storyboard in Resources */,
+				9B9E66602271E3EB0009E4C3 /* oval.jpg in Resources */,
 				2C454230227008CC0065D7E5 /* Assets.xcassets in Resources */,
 				2C45422E227008C50065D7E5 /* Main.storyboard in Resources */,
 				9B9E66592271C2E20009E4C3 /* UIScrollView.rtfd in Resources */,
@@ -149,6 +156,7 @@
 			files = (
 				9B9E665C2271C50E0009E4C3 /* ImageViewController.swift in Sources */,
 				2C454229227008C50065D7E5 /* AppDelegate.swift in Sources */,
+				9B9E665E2271E17B0009E4C3 /* DemoURLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

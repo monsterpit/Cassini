@@ -34,24 +34,35 @@ class ImageViewController: UIViewController {
     
     func fetchImage(){
 
-        //Instead we are going to use   try?
         if let url = imageURL{
+
+            let urlContents = try? Data(contentsOf: url)
             
-//            do{
-//                let urlContents = try Data(contentsOf: <#T##URL#>)
-//             //  urlContents will be of type Data
-//            }
-//            catch let error {
-//
-//
-//            }
-            
-            // has we currently care about what error it is we will do try?
-            let urlContents = try? Data(contentsOf: <#T##URL#>)
-             // try? say's try this thing and if it fails just return nil so now this make urlContents of type Data?  because it might fail 
+            //If let my image data that I got from that urlContent then I can create my image from that data
+            // the image Data is probably a jpeg data or something like that
+            if let imageData = urlContents{
+                
+                // imageView.image = UIImage(named: <#T##String#>)
+                // for loading image with name that is stored locally
+                
+                imageView.image = UIImage(data: imageData)
+                // It will look in there in that bag of bits and see if it recognizes anything that looks like an image like a jpg file or something like that so that's kind of cool
+            }
+
         }
     }
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // by the time I load if my imageURl is nil then load up a sample image
+        if imageURL == nil {
+            
+            imageURL = DemoURLs.standford
+        }
+    }
+    
     
 }
+
+//when added a image tick target membership if not selected to include image when app is installed
