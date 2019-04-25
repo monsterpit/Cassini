@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController , UIScrollViewDelegate {
     
     var imageURL : URL?{
         didSet{
@@ -50,10 +50,24 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!{
 
         didSet{
+            
+            scrollView.minimumZoomScale = 1/25
+            
+            // max to 1 so bits doesnt looks pixelated so i wont let you zoom in any more than 1.0
+            scrollView.maximumZoomScale = 1
+            
+            scrollView.delegate = self
+            
             scrollView.addSubview(imageView)
 
         }
     }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        //returning imageView because that's the subview we want to be transformed when we pinch
+        return imageView
+    }
+    
     
     //this create a imageView of size zero
     var imageView = UIImageView()
@@ -88,3 +102,11 @@ class ImageViewController: UIViewController {
 
 
 //easier in code than IB
+
+//zooming
+//set min and max zoom scale
+//provide a delegate that says which is a view to zoom
+//now it's obvious which view we want the transform to work on here its our imageView
+
+
+//option key + drag in simulator to pinch 
