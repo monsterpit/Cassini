@@ -13,17 +13,30 @@ class ImageViewController: UIViewController {
     var imageURL : URL?{
         didSet{
             
-            imageView.image = nil
-            
-            imageView.sizeToFit()
-            
-            scrollView.contentSize = imageView.frame.size
+            image = nil
             
             if view.window != nil{
                 
                 fetchImage()
             }
         }
+    }
+    
+    private var image : UIImage?{
+        get
+        {
+           return imageView.image
+        }
+        set
+        {
+            imageView.image = newValue
+            
+            imageView.sizeToFit()
+            
+            scrollView.contentSize = imageView.frame.size
+            
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,11 +48,10 @@ class ImageViewController: UIViewController {
     }
     
     @IBOutlet weak var scrollView: UIScrollView!{
-        //here we just want imageView to be in the contentArea  of the scrollView .
-        //So as soon as the scrollView gets hooked up by interface builder I am going to ask the scrollView to add ScrollView to add as a subview my imageView
+
         didSet{
             scrollView.addSubview(imageView)
-            //again the content area is size zero so is my imageView at this point so it's gonna be completely blank
+
         }
     }
     
@@ -54,15 +66,8 @@ class ImageViewController: UIViewController {
             
             if let imageData = urlContents{
                 
-                imageView.image = UIImage(data: imageData)
-                //anytime I set image I have to do
-                //sizeToFit() which means make yourself intrinsic size
-                //The size that will fit this image the best
-                imageView.sizeToFit()
-               
-                scrollView.contentSize = imageView.frame.size
-                 //and now the UIImageView frame has been set  but If we dont do this then it wont scroll at all
-                //otherwise the contentArea will be of 0,0 size and we got this big image and I am trying to scroll in this zero zero size rect does nothing
+                image = UIImage(data: imageData)
+
             }
             
         }
